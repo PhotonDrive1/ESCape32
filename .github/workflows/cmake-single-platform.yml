@@ -43,5 +43,5 @@ jobs:
 
     - name: Build all targets
       run: |
-      cd build
-      make
+        cd build
+        make
