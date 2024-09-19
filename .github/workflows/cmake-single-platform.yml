@@ -43,11 +43,11 @@ jobs:
         make
 
     - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: hex files
-          path: |
-            build/*.hex
+      uses: actions/upload-artifact@v4
+      with:
+        name: hex files
+        path: |
+          build/*.hex
 
     - name: List files
       # Build your program with the given configuration
