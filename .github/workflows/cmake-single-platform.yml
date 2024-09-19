@@ -41,3 +41,7 @@ jobs:
       # Build your program with the given configuration
       run: find build
 
+    - name: Build all targets
+      run: |
+      cd build
+      make
