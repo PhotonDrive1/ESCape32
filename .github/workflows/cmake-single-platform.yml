@@ -21,7 +21,7 @@ jobs:
     - uses: carlosperate/arm-none-eabi-gcc-action@v1
 
     - name: Clone Repository
-      run: git clone -b WD_WIP https://github.com/timemaster5/ESCape32 
+      run: git clone -b WD_WIP https://github.com/timemaster5/ESCape32 .
 
     - name: Clone dependecies
       run: git clone https://github.com/libopencm3/libopencm3.git
