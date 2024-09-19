@@ -20,6 +20,15 @@ jobs:
     steps:
     - uses: carlosperate/arm-none-eabi-gcc-action@v1
 
+    - name: Clone Repository
+      run: git clone -b WD_WIP https://github.com/timemaster5/ESCape32 
+
+    - name: Clone dependecies
+      run: git clone https://github.com/libopencm3/libopencm3.git
+
+    - name: Build dependencies
+      run: make -C libopencm3 TARGETS='stm32/f0 stm32/g0 stm32/g4'
+
     - name: List
       run: find /home/runner/work/ESCape32
       
