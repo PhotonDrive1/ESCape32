@@ -37,3 +37,7 @@ jobs:
       # Build your program with the given configuration
       run: cmake -D LIBOPENCM3_DIR=libopencm3 -B build
 
+    - name: List files
+      # Build your program with the given configuration
+      run: find build
+
